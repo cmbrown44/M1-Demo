@@ -4,7 +4,7 @@ name: GitActions Demo
 on: [push] # In what event does this workflow run
 
 # Global Variables go BEFORE jobs:
-variables: 
+env: 
   GLOBAL_VAR: "This is public!"
 
 # What jobs are part of this workflow
@@ -35,7 +35,7 @@ jobs:
   # erwkugfre8gergerg0er8gger8 - access key / key 
 
   variable_job: 
-    variables: 
+    env: 
       LOCAL_VAR: "Only variable_jobs can use this.."
     runs-on: ubuntu-latest
     steps:
